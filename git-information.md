@@ -8,11 +8,15 @@
 
 - `git config --global user.name "nombre de usuario"`
 - `git config --global user.email email@email`
+- `git config --global core.longpaths true`
 - `git config --global init.defaultbranch main`
 - `git config --global core.autocrlf input`
 
 **Notas:**  
-El valor de **init.defaultbranch** podría cambiar dependiendo del estandar requerido (en algunas empresas con proyectos legacy aún utilizan master como rama principal por simplicidad).  
+El valor de **core.longpaths** permite que Git maneje rutas de archivos que superen los 260 caracteres. Windows tiene un límite histórico de 260 caracteres para las rutas de archivos (el famoso MAX_PATH) por lo que si la ruta de un archivo supera ese límite, Windows "se rompe" y Git no puede leer ni escribir ese archivo.
+
+El valor de **init.defaultbranch** podría cambiar dependiendo del estandar requerido (en algunas empresas con proyectos legacy aún utilizan master como rama principal por simplicidad).
+
 El valor de **core.autocrlf** se establece como input por los siguientes motivos:
 - Al subir: Convierte a LF (por seguridad).
 - Al bajar: No toca nada. Deja el archivo tal cual está en el repositorio (LF); es importante tener presente que si algo se encuentra como CRLF en el repositorio, git lo mantendrá así.
@@ -32,4 +36,5 @@ En caso de utilizar credenciales (user, password) como método de autenticación
 
 Esto guarda tus credenciales de forma local para que no te las pida en cada push o pull.
 
-**Nota**: Este método guarda las credenciales en texto plano en tu PC. Úsalo solo en equipos de confianza.
+**Nota:**  
+Este método guarda las credenciales en texto plano en tu PC. Úsalo solo en equipos de confianza.
