@@ -1,7 +1,10 @@
-# WSL2 
+<h1><strong>Indice</strong></h1>
+
+- [DEBIAN](#debian)
+  - [Error al ejecutar el ping](#error-al-ejecutar-el-ping)
 
 ## DEBIAN
-### Comando para permitir ejecutar el ping
+### Error al ejecutar el ping
 **Error:**
 > ping: socktype: SOCK_RAW  
 > ping: socket: Operation not permitted  
