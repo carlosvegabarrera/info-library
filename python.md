@@ -213,7 +213,8 @@ Guarda los valores en variables para que tu app reaccione:
 - Checkbox: `st.checkbox('Acepto los términos')`
 - Selección única: `st.radio('Elige uno', ['Opción A', 'Opción B'])`
 - Desplegable: `st.selectbox('Elige', ['Gatos', 'Perros'])`
-- Multiselección: `st.multiselect('Compra', ['Leche', 'Pan']).Slider: st.slider('Selecciona un número', 0, 100)`
+- Multiselección: `st.multiselect('Compra', ['Leche', 'Pan'])`
+- Slider: `st.slider('Selecciona un número', 0, 100)`
 - Texto: `st.text_input('Tu nombre')`
 - Subir archivos: `st.file_uploader('Carga tu CSV')`
 
